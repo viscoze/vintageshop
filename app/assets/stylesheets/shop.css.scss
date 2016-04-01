@@ -6,11 +6,11 @@ body {
 .item {
   display: inline-block;
 
-  height: 300px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   margin: 0 0 20px 30px;
   padding: 3px 10px 3px 10px;
-  
+
   color: #ec325b;
   background-color: #fff;
   border-radius: 3px;
@@ -28,6 +28,8 @@ body {
     border-top: 2px solid #f0f2f5;
     text-align: right;
   }
+
+  transition: box-shadow 1s;
 
   &:hover {
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
