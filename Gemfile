@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "paperclip"
 gem 'react-rails', '~> 1.6.0'
 gem 'rails', '4.1.10'
 gem 'uglifier', '>= 1.3.0'
