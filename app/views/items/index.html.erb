@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="head-shop-panel">
+    <% @items.each do |item| %>
+      <div class="item-panel">
+        <div class="item-info">
+          Title: <%= item.title %><br />
+          Description: <%= item.description %><br />
+          Price: <%= item.price %>
+        </div>
+        <%= link_to "Edit Item Info", edit_item_path(item) %><br />
+        <%= link_to "Delete Item", item_path(item), method: :delete %>
+      </div><br />
+    <% end %>
+  </div>
+  <%= link_to "Add new item", new_item_path %><br />
+  <%= link_to "Back to the Main Page", root_path %>
+</div>

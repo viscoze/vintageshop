@@ -5,11 +5,4 @@ class ShopController < ApplicationController
     render component: 'Shop', props: { items: @items }
   end
 
-  def create
-  end
-
-  private
-
-  def item_position_params
-  end
 end

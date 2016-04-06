@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyOwnShop</title>
+  <title>VintageShop</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<div class="container-fluid logo-bar">
+  <span class="logo">VintageShop</span><br />
+  <span class="tagline">here you'll find yourself</span>
+</div>
 
 <%= yield %>
 
