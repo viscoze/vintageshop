@@ -3,18 +3,25 @@ var Shop = React.createClass({
     return {order_list: []}
   },
 
-  clickAddToOrder(event) {
+  clickAddToOrder(item) {
+    var item_to_order = {}
 
+    // if this.state.order_list.include(item) {
+    //   var x = order_list.indexOf(item)
+    //   order_list[x].clickCount += 1
+    // } else {
+    //    
+    //
+    // }
+
+    this.setState({order_list: this.state.order_list.push(item_to_order)})
   },
 
   render() {
     var items = this.props.items.map(function(item,index) {
-      
+
       return (<Item onClick={this.clickAddToOrder}
-                    title={item.title}
-                    description={item.description}
-                    price={item.price}
-                    image={item.image}
+                    item={item}
                     key={index}/>)
                }, this);
 

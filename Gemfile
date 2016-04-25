@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'react-rails-img'
 gem 'devise'
 gem 'paperclip'
 gem 'react-rails', '~> 1.6.0'

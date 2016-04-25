@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require react_rails_img
 //= require react
 //= require react_ujs
 //= require components
