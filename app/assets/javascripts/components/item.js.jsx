@@ -24,7 +24,9 @@ var Item = React.createClass({
     var price = this.props.item.price
     var src   = "/assets/" + this.props.item.image_file_name
 
-    return (<div className="item" onClick={this.handleItemClick}>
+    return (<div className="item"      onClick={this.handleItemClick}
+                 data-toggle="tooltip" data-placement="right"
+                 title={description}>
               <div className="title">{title}</div>
               <img className="img-responsive" src={src} />
               <div className="price">${price}.0</div>
